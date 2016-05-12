@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webmapping</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<!-- Start Menu -->
+<div class="menubar" data-scroll="true">
+  <a href="#" class="logo"></a>
+  <ul class="mainmenu">
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<!-- End Menu -->
+
+
+
+<!-- Start Content -->
+
+
+  <%= yield %>
+
+
+<!-- End Content -->
+
+
+
+<footer class="footer">
+  <a href="http://ninetofive.me"><h6>2016 - </h6></a>
+</footer>
+</body>
+</html>
