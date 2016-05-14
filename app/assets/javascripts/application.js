@@ -16,6 +16,7 @@
 //= require jquery.jcarousel
 //= require jquery.mixitup
 //= require responsiveslides
+//= require cartodb
 //= require custom
 //= require mapping
 //= require_tree .
