@@ -19,11 +19,11 @@
               zoom: 14
           })
 
-          L.tileLayer('//dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+          L.tileLayer('http://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
               attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
           }).addTo(map);
 
-          var layerUrl = '//nytee.cartodb.com/api/v2/viz/d35afcca-0036-11e6-8f73-0ecfd53eb7d3/viz.json';
+          var layerUrl = 'http://nytee.cartodb.com/api/v2/viz/d35afcca-0036-11e6-8f73-0ecfd53eb7d3/viz.json';
 
           // change the query for the first layer
           var subLayerOptions = {
@@ -36,7 +36,7 @@
                   .on('done', function(layer) {
                       layer.getSubLayer(0).set(subLayerOptions);
                   }).on('error', function() {
-                      alert('')
+                      alert('Error leyendo layer.')
                   });
       }
 
