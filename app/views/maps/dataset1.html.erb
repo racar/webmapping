@@ -31,7 +31,7 @@
               cartocss: "#example_cartodbjs_1{marker-fill: #109DCD; marker-width: 5; marker-line-color: white; marker-line-width: 0;}"
           }
 
-          cartodb.createLayer(map, layerUrl)
+          cartodb.createLayer(map, layerUrl,{https: true})
                   .addTo(map)
                   .on('done', function(layer) {
                       layer.getSubLayer(0).set(subLayerOptions);
